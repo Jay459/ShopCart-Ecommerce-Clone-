@@ -1,0 +1,21 @@
+[
+    {
+        "name":"Mobile",
+        "price":32900,
+        "description":"8gbram/128gb rom",
+        "rating":4.5,
+        "image":[{
+            "public_id":"dsgsgbsgbearbhdsf",
+            "url":"asfwedtgwegv"
+        }],
+        "category":"Mobiles",
+        "seller":"Ram",
+        "stock":200,
+        "noofreviews":18,
+        "reviews":[{
+            "name":"Jayanth",
+            "rating":4.5,
+            "comment":"This is the best phone"
+        }]
+    }
+]
