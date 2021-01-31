@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node backend/server.js",
     "dev": "nodemon backend/server.js",
-    "prod": "nodemon backend/server.js"
+    "prod": "nodemon backend/server.js",
+    "seeder": "node backend/utils/seeder.js"
   },
   "repository": {
     "type": "git",
@@ -19,6 +20,8 @@
   },
   "homepage": "https://github.com/Jay459/ShopCart-Ecommerce-Clone-#readme",
   "dependencies": {
+    "cross-env": "^7.0.3",
+    "cross-spawn": "^7.0.3",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "mongoose": "^5.11.13",
