@@ -2,6 +2,7 @@ const express = require('express');
 const app = express();
 const errormiddleware = require('../backend/middleware/errormiddleware');
 const productroute = require('./routes/product');
+const userroutes = require('../backend/routes/user');
 
 //handling the uncaught exception
 
@@ -21,7 +22,7 @@ app.use(express.json());
 
 //routes
 app.use('/product', productroute);
-
+app.use('/user', userroutes);
 
 //middleware
 app.use(errormiddleware);
