@@ -1,5 +1,6 @@
 const express = require('express');
 const app = express();
+const cookieparser = require('cookie-parser')
 const errormiddleware = require('../backend/middleware/errormiddleware');
 const productroute = require('./routes/product');
 const userroutes = require('../backend/routes/user');
@@ -19,10 +20,16 @@ const port = process.env.PORT
 
 //middleware
 app.use(express.json());
+app.use(cookieparser())
 
 //routes
 app.use('/product', productroute);
 app.use('/user', userroutes);
+app.get('/', (req, res) => {
+    res.json({
+        message:"hello world"
+    })
+});
 
 //middleware
 app.use(errormiddleware);
