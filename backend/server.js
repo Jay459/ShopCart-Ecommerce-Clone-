@@ -4,6 +4,7 @@ const cookieparser = require('cookie-parser')
 const errormiddleware = require('../backend/middleware/errormiddleware');
 const productroute = require('./routes/product');
 const userroutes = require('../backend/routes/user');
+const orderroutes = require('../backend/routes/order')
 
 //handling the uncaught exception
 
@@ -25,6 +26,7 @@ app.use(cookieparser())
 //routes
 app.use('/product', productroute);
 app.use('/user', userroutes);
+app.use('/order',orderroutes);
 app.get('/', (req, res) => {
     res.json({
         message:"hello world"
