@@ -12,4 +12,8 @@ router.get('/myorders',isAuthenticatedUser, orderControllers.myOrders)
 
 router.get('/allorders',isAuthenticatedUser, authRoles('admin'), orderControllers.allorders)
 
+router.put('/updateorder/:id',isAuthenticatedUser, authRoles('admin'), orderControllers.updateOrder)
+
+router.delete('/deleteorder/:id',isAuthenticatedUser, authRoles('admin'), orderControllers.deleteOrderById);
+
 module.exports = router;
