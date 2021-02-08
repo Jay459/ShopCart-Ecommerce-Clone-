@@ -13,4 +13,10 @@ router.put('/updateproduct/:id', isAuthenticatedUser, authRoles('admin') , produ
 
 router.delete('/deleteproduct/:id',isAuthenticatedUser,authRoles('admin') , productcontroller.deleteProduct);
 
+router.put('/review', isAuthenticatedUser, productcontroller.createProductReview);
+
+router.get('/getallreviews/:id',isAuthenticatedUser, productcontroller.getProductReviews);
+
+router.delete('/deletereview' , isAuthenticatedUser, productcontroller.deleteReview)
+
 module.exports = router;
