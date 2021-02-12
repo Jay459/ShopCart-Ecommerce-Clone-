@@ -14,7 +14,7 @@ const seedProducts = async (req,res,next) => {
         console.log("successfully added all the products")
 
     } catch (error) {
-        console.log(error);
+        console.log(error.stack);
         process.exit();
     }
 }
