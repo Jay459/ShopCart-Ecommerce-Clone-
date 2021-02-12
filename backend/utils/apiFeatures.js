@@ -24,7 +24,7 @@ class APIFeatures {
         let querystr = JSON.stringify(querycopy);
         querystr = querystr.replace(/\b(gt|gte|lte|lt)\b/g, match=> `$${match}`);
 
-        this.query = this.query.find(JSON.parse(querystr)); 
+        this.query = this.query.find(JSON.parse(querystr));
         return this
     }
     pagination(resPerPage){
