@@ -1,21 +1,170 @@
 [
     {
-        "name":"Mobile",
-        "price":32900,
-        "description":"8gbram/128gb rom",
+        "name":"Iphone 12 128GB",
+        "price":119000,
+        "description":"Iphone 12 128GB memory",
         "rating":4.5,
         "image":[{
-            "public_id":"dsgsgbsgbearbhdsf",
-            "url":"asfwedtgwegv"
+            "public_id":"1613120860",
+            "url":["https://res.cloudinary.com/jay14/image/upload/v1613120860/E-Commerce/iphone-12-pro-family-hero_vjxzsz.jpg",
+                "https://res.cloudinary.com/jay14/image/upload/v1613120861/E-Commerce/iphone-12-blue-select-2020_zjadyc.png"]
         }],
         "category":"Mobiles",
-        "seller":"Ram",
+        "seller":"Apple",
+        "stock":200,
+        "noofreviews":1,
+        "reviews":[{
+            "user":"601aba518dfa1f4b85ee3e77",
+            "name":"Jayanth",
+            "rating":4.5,
+            "comment":"This the best mobile"
+        }]
+    },
+    {
+        "name":"T-Shirts",
+        "price":399,
+        "description":"T-Shirts of size M,L,XL,XXL",
+        "rating":4.5,
+        "image":[{
+            "public_id":"v1613120889",
+            "url":["https://res.cloudinary.com/jay14/image/upload/v1613120889/E-Commerce/TRUE-STORY-Elite-orienteering-shirt-Men-Deep-BLUE-800x800_na9m6e.jpg", 
+                "https://res.cloudinary.com/jay14/image/upload/v1613120891/E-Commerce/Ramen-Panda-tahiti-blue-light-t-shirt-teeturtle-full-21-1000x1000_so7mwh.jpg"]
+        }],
+        "category":"Clothes/Shoes",
+        "seller":"bewakoof",
+        "stock":200,
+        "noofreviews":18,
+        "reviews":[{
+            "user":"601aba518dfa1f4b85ee3e77",
+            "name":"Jayanth",
+            "rating":4.5,
+            "comment":"This is the nice"
+        }]
+    },
+    {
+        "name":"I-Watch",
+        "price":51999,
+        "description":"Apple I watch",
+        "rating":4.5,
+        "image":[{
+            "public_id":"v1613120923",
+            "url":["https://res.cloudinary.com/jay14/image/upload/v1613120923/E-Commerce/MTU72_AV1_lojkox.jpg",
+                "https://res.cloudinary.com/jay14/image/upload/v1613120927/E-Commerce/MV8F2_AV1_edjzt6.jpg"]
+        }],
+        "category":"Electronics",
+        "seller":"Apple",
+        "stock":200,
+        "noofreviews":18,
+        "reviews":[{
+            "user":"601aba518dfa1f4b85ee3e77",
+            "name":"Jayanth",
+            "rating":4.5,
+            "comment":"This is the nice "
+        }]
+    },
+    {
+        "name":"Nike Air Jordan",
+        "price":15999,
+        "description":"nike shoes",
+        "rating":4.5,
+        "image":[{
+            "public_id":"v1613120968",
+            "url":["https://res.cloudinary.com/jay14/image/upload/v1613120968/E-Commerce/adapt-bb-2-tie-dye-basketball-shoe-vdFwKS_heftqw.jpg",
+                "https://res.cloudinary.com/jay14/image/upload/v1613120975/E-Commerce/react-infinity-run-flyknit-premium-womens-running-shoe-c54NMG_bpedcf.jpg",
+                "https://res.cloudinary.com/jay14/image/upload/v1613120983/E-Commerce/air-zoom-superrep-2-womens-hiit-class-shoe-l2XV7P_ql51zn.jpg"]
+        }],
+        "category":"Clothes/Shoes",
+        "seller":"nike",
+        "stock":200,
+        "noofreviews":18,
+        "reviews":[{
+            "user":"601aba518dfa1f4b85ee3e77",
+            "name":"Jayanth",
+            "rating":4.5,
+            "comment":"This is the nice "
+        }]
+    },
+    {
+        "name":"Jeans",
+        "price":1999,
+        "description":"Denim Jeans",
+        "rating":4.5,
+        "image":[{
+            "public_id":"v1613121029",
+            "url":"https://res.cloudinary.com/jay14/image/upload/v1613121029/E-Commerce/levis_zzpwur.jpg"
+        }],
+        "category":"Clothes/Shoes",
+        "seller":"bewakoof",
+        "stock":200,
+        "noofreviews":18,
+        "reviews":[{
+            "user":"601aba518dfa1f4b85ee3e77",
+            "name":"Jayanth",
+            "rating":4.5,
+            "comment":"This is the nice"
+        }]
+    },
+    {
+        "name":"Dell Laptop",
+        "price":73999,
+        "description":"Dell inspiron 128gb ssd , 1Tb hard disk , 8 gb ram",
+        "rating":4.5,
+        "image":[{
+            "public_id":"v1613121102",
+            "url":"https://res.cloudinary.com/jay14/image/upload/v1613121102/E-Commerce/proart-studiobook-one-1_wcf9vs.png"
+        }],
+        "category":"Laptops",
+        "seller":"Dell",
         "stock":200,
         "noofreviews":18,
         "reviews":[{
             "name":"Jayanth",
             "rating":4.5,
-            "comment":"This is the best phone"
+            "comment":"This is the nice "
+        }]
+    },
+    {
+        "name":"Iphone Case",
+        "price":2999,
+        "description":"Iphone protective case",
+        "rating":4.5,
+        "image":[{
+            "public_id":"v1613121148",
+            "url":["https://res.cloudinary.com/jay14/image/upload/v1613121148/E-Commerce/194252168936-frontimage_idwlem.png",
+                "https://res.cloudinary.com/jay14/image/upload/v1613121160/E-Commerce/610214665638-frontimage_hjigry.png",
+                "https://res.cloudinary.com/jay14/image/upload/v1613121173/E-Commerce/81447_smfnoo.jpg"]
+        }],
+        "category":"Electronics",
+        "seller":"Apple",
+        "stock":200,
+        "noofreviews":18,
+        "reviews":[{
+            "user":"601aba518dfa1f4b85ee3e77",
+            "name":"Jayanth",
+            "rating":4.5,
+            "comment":"This is the nice "
+        }]
+    },
+    {
+        "name":"Air Pods",
+        "price": 35999,
+        "description":"Apple Air pods 3",
+        "rating":4.5,
+        "image":[{
+            "public_id":"v1613121218",
+            "url": ["https://res.cloudinary.com/jay14/image/upload/v1613121218/E-Commerce/MV7N2_mqpmpo.jpg",
+                "https://res.cloudinary.com/jay14/image/upload/v1613121233/E-Commerce/ac793ff4-d3da-4cbe-beba-f956e7494490_1.5bae15688eb0aafd22a99d01a072f9db_u4b7ag.jpg",
+                "https://res.cloudinary.com/jay14/image/upload/v1613121249/E-Commerce/7120GgUKj3L._AC_SL1500__sbzgnv.jpg"]
+        }],
+        "category":"Electronics",
+        "seller":"Apple",
+        "stock":200,
+        "noofreviews":18,
+        "reviews":[{
+            "user":"601aba518dfa1f4b85ee3e77",
+            "name":"Jayanth",
+            "rating":4.5,
+            "comment":"This is the nice "
         }]
     }
 ]
