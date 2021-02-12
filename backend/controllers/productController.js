@@ -17,9 +17,9 @@ exports.newProduct = catchAsynErrors (async (req,res,next) => {
 // displaying all the products
 exports.getAllProuducts = catchAsynErrors (async (req,res,next) =>{
     
-    const resPerPage = 1;
+    const resPerPage = 4;
 
-    const productCount = await Product.countDocuments();
+    const productsCount = await Product.countDocuments();
 
     const apiFeatures =  new APIFeatures(Product.find() , req.query)
     .search()
@@ -28,16 +28,10 @@ exports.getAllProuducts = catchAsynErrors (async (req,res,next) =>{
 
     const products = await apiFeatures.query;
 
-    if(products.length <=0){
-        return res.json({
-            message:"There are no products"
-        })
-    }
-
     res.status(200).json({
         success:"true",
         products: products,
-        productCount
+        productsCount
     })
 })
 
