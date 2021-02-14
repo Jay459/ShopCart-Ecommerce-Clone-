@@ -2,6 +2,7 @@ const Product = require('./../models/productModel');
 const ErrorHandler = require('../utils/errorhandler');
 const catchAsynErrors = require('../middleware/catchAsyncErrors');
 const APIFeatures  =require('../utils/apiFeatures');
+const { set } = require('mongoose');
 //creating new product
 
 exports.newProduct = catchAsynErrors (async (req,res,next) => {
@@ -17,7 +18,7 @@ exports.newProduct = catchAsynErrors (async (req,res,next) => {
 // displaying all the products
 exports.getAllProuducts = catchAsynErrors (async (req,res,next) =>{
     
-    const resPerPage = 4;
+    const resPerPage = 8;
 
     const productsCount = await Product.countDocuments();
 
@@ -28,11 +29,13 @@ exports.getAllProuducts = catchAsynErrors (async (req,res,next) =>{
 
     const products = await apiFeatures.query;
 
-    res.status(200).json({
+    setTimeout (() =>{
+        res.status(200).json({
         success:"true",
         products: products,
         productsCount
-    })
+        })
+    },2000)
 })
 
 
