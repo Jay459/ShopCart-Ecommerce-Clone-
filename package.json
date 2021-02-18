@@ -32,5 +32,6 @@
     "nodemailer": "^6.4.17",
     "nodemon": "^2.0.7",
     "validator": "^13.5.2"
-  }
+  },
+  "proxy": "http://127.0.0.1:3000"
 }
