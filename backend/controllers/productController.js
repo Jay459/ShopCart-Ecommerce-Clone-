@@ -35,7 +35,7 @@ exports.getAllProuducts = catchAsynErrors (async (req,res,next) =>{
         products: products,
         productsCount
         })
-    },2000)
+    },1000)
 })
 
 
