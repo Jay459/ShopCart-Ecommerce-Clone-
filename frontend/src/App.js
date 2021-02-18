@@ -8,14 +8,14 @@ import ProductDetails from './components/product/ProductDetails'
 function App() {
   return (
     <Router>
-    <div className="App">
+      <div className="App">
       <Header/>
       <div className="container container-fluid" >
-        <Route path="/" component = {Home} exact={true} />
-        <Route path="/product/:id" component = {ProductDetails} exact={true} />
+        <Route path="/" component = {Home} exact />
+        <Route path="/product/:id" component = {ProductDetails} exact />
       </div>
       <Footer/>
-    </div>
+      </div>
     </Router>
   );
 }
