@@ -26,16 +26,18 @@ const ProductDetails = ({match}) => {
     <Fragment>
         {loading ? <Loader />: (
             <Fragment>
+                <MetaData title = {product.name}/>
                 <div className="row f-flex justify-content-around">
-        <div className="col-12 col-lg-5 img-fluid" id="product_image">
-            <Carousel pause="hover">
-                {product.image && product.image.map(images=>(
-                    <Carousel.Item key = {images.public_id}>
-                        <img className="d-block w-100" src={images.url} alt ={product.title} />
-                    </Carousel.Item>
-                ))}
-            </Carousel>
-        </div>
+                <div className="col-12 col-lg-5 img-fluid" id="product_image">
+                    <Carousel pause="hover">
+                    {product.image && product.image.map(images=>(
+                        <Carousel.Item key = {images.public_id}>
+                            <img className="d-block w-100" src={images.url} alt ={product.title} />
+                        </Carousel.Item>
+                    ))}
+                    </Carousel>
+                    
+                 </div>
 
         <div className="col-12 col-lg-5 mt-5">
             <h3>{product.name}</h3>
