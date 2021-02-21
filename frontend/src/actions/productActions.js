@@ -10,11 +10,11 @@ import {ALL_PRODUCT_REQUEST,
 } from '../constants/productConstants'
 
 
-export const getProducts = () => async (dispatch) =>{
+export const getProducts = (keyword = '' , currentPage = 1 ) => async (dispatch) =>{
     try {
         dispatch({type: ALL_PRODUCT_REQUEST})
         
-        const {data} = await axios.get('/product/getallproducts')
+        const {data} = await axios.get(`/product/getallproducts?page=${currentPage}`)
 
         dispatch({
             type: ALL_PRODUCT_SUCCESS,
