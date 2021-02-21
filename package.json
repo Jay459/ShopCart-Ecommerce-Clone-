@@ -31,6 +31,7 @@
     "mongoose": "^5.11.13",
     "nodemailer": "^6.4.17",
     "nodemon": "^2.0.7",
+    "react-js-pagination": "^3.0.3",
     "validator": "^13.5.2"
   },
   "proxy": "http://127.0.0.1:3000"
