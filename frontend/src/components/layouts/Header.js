@@ -2,14 +2,15 @@ import React, { Fragment } from 'react'
 import {Route} from 'react-router-dom'
 
 import Search from './Search'
-
+    
+import '../../App.css'
 const Header = () => {
     return (
         <Fragment>
             <nav className="navbar row">
             <div className="col-12 col-md-3">
                 <div className="navbar-brand">
-                <img src="/images/logo.png" />
+                <img src="/images/logo.png" alt = "" />
                 </div>
             </div>
 
