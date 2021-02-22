@@ -1,14 +1,23 @@
 import React , { Fragment , useState , useEffect } from 'react'
 import Pagination from 'react-js-pagination';
+import Slider from 'rc-slider'
+import 'rc-slider/assets/index.css';
+import '../components/layouts/Search'
 import MetaData from '../components/layouts/MetaData'
 import Product from './product/Product'
 import Loader from './layouts/Loader'
 import {useDispatch , useSelector} from 'react-redux'
-import {getProducts} from '../actions/productActions';
 import { useAlert } from 'react-alert' ;
+import {getProducts} from '../actions/productActions';
+import { useParams } from 'react-router-dom';
 
-const Home = (match) => {
+// const { createSliderwithTooltip } = Slider;
 
+// const Range = createSliderwithTooltip(Slider.Range)
+
+const Home = () => {
+    
+    // const [price,setPrice ] = useState([1 , 1000]);
     const [currentPage , setCurrentPage] = useState(1)
     
     const alert = useAlert();
@@ -16,15 +25,16 @@ const Home = (match) => {
     
     const {loading , products , error, productsCount, resPerPage} = useSelector(state => state.products)
     
-    // const keyword = match.query.keyword;
+    const params = useParams()
+    const keyword = params.keyword
 
     useEffect(() => {
         if(error){
             return alert.error(error)
         }
         
-        dispatch(getProducts(currentPage))
-    }, [dispatch , alert ,error , currentPage])
+        dispatch(getProducts(keyword ,currentPage))
+    }, [dispatch , alert ,error ,keyword, currentPage])
     
     function setCurrentPageNo(pageNumber){
         setCurrentPage(pageNumber)
