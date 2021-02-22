@@ -16,8 +16,8 @@ class APIFeatures {
 
     filter(){
         const querycopy = {...this.querystr};
-        const removefields = ['keyword','limit','page'];
         //removing fields from query string
+        const removefields = ['keyword','limit','page'];
         removefields.forEach(el => delete querycopy[el])
 
         // adding extra filter for price and rating
