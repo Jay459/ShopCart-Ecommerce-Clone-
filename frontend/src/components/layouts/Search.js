@@ -1,7 +1,7 @@
-import React ,{useState} from 'react'
+import React ,{ useState } from 'react'
 
 const Search = ({history}) => {
-    const [keyword , setKeyword] = useState('');
+    const [keyword , setKeyword] = useState(' ');
 
     const searchHandler = (e) =>{
         e.preventDefault();
