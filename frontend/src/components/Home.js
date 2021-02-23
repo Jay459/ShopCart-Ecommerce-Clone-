@@ -65,7 +65,7 @@ const Home = () => {
                             firstPageText = {'First'}
                             lastPageText = {'last'}
                             itemClass = "page-item"
-                            linkClass = "page-link"                      />
+                            linkClass = "page-link"/>
                     </div>
                     )}
                 </Fragment>
