@@ -14,7 +14,7 @@ export const getProducts = (keyword = '' , currentPage = 1 , price) => async (di
     try {
         dispatch({type: ALL_PRODUCT_REQUEST})
 
-        let link = `/product/getallproducts?&page=${currentPage}&keyword=${keyword}`
+        let link = `/product/getallproducts?&page=${currentPage}&keyword=${keyword}&price[lte]=${price[1]}&price[gte]=${price[0]}`
         
         const {data} = await axios.get(link)
 
