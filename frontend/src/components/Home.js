@@ -15,6 +15,7 @@ const { createSliderWithTooltip } = Slider;
 
 const Range = createSliderWithTooltip(Slider.Range)
 
+
 const Home = () => {
     
     const [currentPage , setCurrentPage] = useState(1)
